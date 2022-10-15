@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-04-27
 inline: true
 ---
 
-A simple inline announcement.
+Defended the bachelors thesis titled, "Adversarial Attacks for Malicious Domain Detection using Heterogeneous Information Networks".

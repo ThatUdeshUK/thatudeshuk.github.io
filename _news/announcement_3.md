@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-10-09
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+First author paper "HeteroGuard: Defending Heterogeneous Graph Neural Networks against Adversarial Attacks" is accepted at [The 2nd International Workshop on Machine Learning on Graphs (MLoG)](https://mlog-workshop.github.io) to be held at [ICDM'22](https://icdm22.cse.usf.edu).

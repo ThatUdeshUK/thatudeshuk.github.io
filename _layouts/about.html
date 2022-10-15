@@ -51,14 +51,12 @@ layout: default
           {%- if page.social %}
           <!-- Social -->
           <div class="social">
-            <div class="contact-icons">
-            {% include social.html %}
-            </div>
-
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
-            
+            <div class="contact-icons">
+            {% include social.html %}
+            </div>
           </div>
           {%- endif %}
         </article>
