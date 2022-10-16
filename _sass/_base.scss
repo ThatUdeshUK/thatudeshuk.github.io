@@ -424,17 +424,28 @@ footer.sticky-bottom {
   a {
     text-decoration: none;
 
+    .card-title {
+      font-size:larger;
+    }
+
     &:hover {
       .card-title {
         color: var(--global-theme-color);
+      }
+
+      .card {
+        background-color: var(--global-code-bg-color);
+        border: 1px solid var(--global-theme-color);
       }
     }
   }
 
   .card {
-    -webkit-box-shadow: 0 5px 1px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    box-shadow: 0 5px 1px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
-    border-radius: 0;
+    -webkit-box-shadow: None;
+    box-shadow: None;
+    border-radius: 6px;
+    border: 1px solid var(--global-divider-color);
+    overflow: hidden;
     img {
       width: 100%;
     }
@@ -659,6 +670,17 @@ html.transition *:after {
     blockquote {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
+    }
+  }
+  .project-tech {
+    display: inline-block;
+
+    span {
+      background-color: var(--global-theme-color);
+      color: white;
+      font-size: small;
+      padding: 3px 6px;
+      border-radius: 4px;
     }
   }
 }

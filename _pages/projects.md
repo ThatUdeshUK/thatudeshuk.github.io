@@ -1,8 +1,8 @@
-<!-- ---
+---
 layout: page
 title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Collection of Research and Software Engineering projects.
 nav: true
 nav_order: 2
 display_categories: [Research, Engineering]
@@ -55,4 +55,4 @@ horizontal: false
   </div>
   {%- endif -%}
 {%- endif -%}
-</div> -->
+</div>
