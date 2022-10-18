@@ -18,4 +18,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-[TODO] - Research Intern 🔍 Developer 🛠 Student 🎒
+I am an aspiring Researcher who currently working as a Research Engineer. I have eight years of experience working as a system engineer and a research engineer. My research interests are graph learning and network science where I have an understanding in a theoretical and practical standpoint. Though, I have also tackled problems in varying fields such as Cyber-Security, Natural Language Processing, and Cryptocurrency.
