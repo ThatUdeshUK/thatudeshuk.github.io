@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Graph Learning for Malicious Domain Detection
+title: ToshiTag
 description: Analyzed dark-net web services and their integrations with cryptocurrencies.
 img: 
 importance: 4
