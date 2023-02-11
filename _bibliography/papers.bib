@@ -3,6 +3,24 @@
 
 % @string{aps = {American Physical Society,}}
 
+@inproceedings{heteroguard:icdmw:2022,
+  author = {Kumarasinghe, Udesh and Nabeel, Mohamed and De Zoyza, Kasun and Gunawardana, Kasun and Elvitigala, Charitha},
+  booktitle = {2022 International Conference on Data Mining Workshops (ICDMW)},
+  volume = {},
+  issn = {},
+  title = {HeteroGuard: Defending Heterogeneous Graph Neural Networks against Adversarial Attacks},
+  year = {2022},
+  selected = {true},
+  abstract = {Graph neural networks (GNNs) have achieved remarkable success in many application domains including drug discovery, program analysis, social networks, and cyber security. However, it has been shown that they are not robust against adversarial attacks. In the recent past, many adversarial attacks against homogeneous GNNs and defenses have been proposed. However, most of these attacks and defenses are ineffective on heterogeneous graphs as these algorithms optimize under the assumption that all edge and node types are of the same and further they introduce semantically incorrect edges to perturbed graphs. Here, we first develop, HetePR-BCD, a training time (i.e. poisoning) adversarial attack on heterogeneous graphs that outperforms the start of the art attacks proposed in the literature. Our experimental results on three benchmark heterogeneous graphs show that our attack, with a small perturbation budget of 15%, degrades the performance up to 32% (F1 score) compared to existing ones. It is concerning to mention that existing defenses are not robust against our attack. These defenses primarily modify the GNN’s neural message passing operators assuming that adversarial attacks tend to connect nodes with dissimilar features, but this assumption does not hold in heterogeneous graphs. We construct HeteroGuard, an effective defense against training time attacks including HetePR-BCD on heterogeneous models. HeteroGuard outperforms the existing defenses by 3-8% on F1 score depending on the benchmark dataset.},
+  keywords = {graph neural networks;adversarial attacks;defenses;heterogeneous graphs},
+  doi = {10.1109/ICDMW58026.2022.00096},
+  url = {https://ieeexplore.ieee.org/abstract/document/10031190},
+  preview = {heteroguard.png},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+  month = {dec}
+}
+
 @misc{pdns_net:arxiv:2022,
   doi = {10.48550/ARXIV.2203.07969},
   url = {https://arxiv.org/abs/2203.07969},
@@ -18,20 +36,4 @@
   selected = {true},
   preview = {domain_ip_graph.jpg},
   bibtex_show = {true},
-}
-
-@inproceedings{heteroguard:icdmw:2022,
-  author = {Kumarasinghe, Udesh and Nabeel, Mohamed and De Zoyza, Kasun and Gunawardana, Kasun and Elvitigala, Charitha},
-  booktitle = {2022 International Conference on Data Mining Workshops (ICDMW)},
-  volume = {},
-  issn = {},
-  title = {HeteroGuard: Defending Heterogeneous Graph Neural Networks against Adversarial Attacks},
-  year = {2022},
-  abstract = {Graph neural networks (GNNs) have achieved remarkable success in many application domains including drug discovery, program analysis, social networks, and cyber security. However, it has been shown that they are not robust against adversarial attacks. In the recent past, many adversarial attacks against homogeneous GNNs and defenses have been proposed. However, most of these attacks and defenses are ineffective on heterogeneous graphs as these algorithms optimize under the assumption that all edge and node types are of the same and further they introduce semantically incorrect edges to perturbed graphs. Here, we first develop, HetePR-BCD, a training time (i.e. poisoning) adversarial attack on heterogeneous graphs that outperforms the start of the art attacks proposed in the literature. Our experimental results on three benchmark heterogeneous graphs show that our attack, with a small perturbation budget of 15%, degrades the performance up to 32% (F1 score) compared to existing ones. It is concerning to mention that existing defenses are not robust against our attack. These defenses primarily modify the GNN’s neural message passing operators assuming that adversarial attacks tend to connect nodes with dissimilar features, but this assumption does not hold in heterogeneous graphs. We construct HeteroGuard, an effective defense against training time attacks including HetePR-BCD on heterogeneous models. HeteroGuard outperforms the existing defenses by 3-8% on F1 score depending on the benchmark dataset.},
-  keywords = {graph neural networks;adversarial attacks;defenses;heterogeneous graphs},
-  doi = {10.1109/ICDMW58026.2022.00096},
-  url = {https://doi.ieeecomputersociety.org/10.1109/ICDMW58026.2022.00096},
-  publisher = {IEEE Computer Society},
-  address = {Los Alamitos, CA, USA},
-  month = {dec}
 }
