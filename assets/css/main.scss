@@ -17,3 +17,11 @@ $max-content-width: {{ site.max_width }};
 .news-date {
   min-width: 96px;
 }
+
+.bio {
+  margin: 48px 0 0 0; 
+
+  .profile {
+    padding-right: 16px;
+  }
+}
