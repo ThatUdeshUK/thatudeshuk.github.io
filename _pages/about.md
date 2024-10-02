@@ -4,10 +4,10 @@ title: About
 permalink: /
 subtitle: Ph.D. Student @ <a href='https://www.purdue.edu'>Purdue University</a> in Computer Science.
 
-profile:
-  align: left
-  image: udesh_kumarasinghe_profile.jpg
-  image_circular: false # crops the image to make it circular
+# profile:
+#   align: left
+#   image: udesh_kumarasinghe_profile.jpg
+#   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>
   #   <p>123 your address street</p>
