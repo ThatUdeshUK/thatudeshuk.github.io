@@ -3,7 +3,7 @@ layout: page
 title: CTI Report Intelligence
 description: Experimented and implemented models to understand and explain cyber-security threat intelligence reports using natural language processing techniques.
 img: 
-importance: 1
+importance: 3
 category: Research
 ---
 

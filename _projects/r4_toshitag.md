@@ -3,7 +3,7 @@ layout: page
 title: ToshiTag
 description: Analyzed dark-net web services and their integrations with cryptocurrencies.
 img: 
-importance: 4
+importance: 6
 category: Research
 ---
 

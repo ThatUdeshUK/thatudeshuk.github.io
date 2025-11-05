@@ -3,7 +3,7 @@ layout: page
 title: Graph Learning for Malicious Domain Detection
 description: Predicted malicious domains at large scale using graph machine learning.
 img: 
-importance: 3
+importance: 5
 category: Research
 ---
 
