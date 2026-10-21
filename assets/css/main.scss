@@ -3,25 +3,117 @@
 ---
 @charset "utf-8";
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+/* Built-in Sass modules you’ll likely use across partials */
+@use "sass:math";
+@use "sass:string";
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill"
-;
+/* Configure your design tokens BEFORE loading any of your partials.
+   Make sure `_sass/_variables.scss` declares `$max-content-width: 72rem !default;` */
+@use "variables" with (
+  $max-content-width: {{ site.max_width | default:  "930px" }}
+);
 
-.news-date {
-  min-width: 96px;
+/* Your project partials — convert these files to `@use "variables";`
+   (or `@use "variables" as *;`) inside each file and qualify variables if needed. */
+@use "themes";
+@use "layout";
+
+// Core styles organized by usage
+@use "typography";
+@use "navbar";
+@use "footer";
+@use "blog";
+@use "publications";
+@use "components";
+@use "utilities";
+
+// Other specialized styles
+@use "tabs";
+@use "teachings";
+@use "typograms";
+
+/*******************************************************************************
+ * Site-local customizations (www.udesh.xyz)
+ * Everything above this banner is a verbatim copy of al_folio_core's
+ * assets/css/main.scss; keep it in sync when bumping the gem
+ * (`bundle exec al-folio upgrade overrides diff assets/css/main.scss`).
+ ******************************************************************************/
+
+// Blue theme instead of the default purple (dark mode is disabled in _config.yml).
+:root {
+  --global-theme-color: #{variables.$blue-color};
+  --global-hover-color: #{variables.$blue-color};
+  --global-code-bg-color: #{rgba(variables.$blue-color, 0.05)};
 }
 
+// Bio
 .bio {
-  margin: 48px 0 0 0; 
+  margin: 48px 0 0 0;
 
   .profile {
     padding-right: 16px;
+  }
+}
+
+// News
+.news {
+  margin-top: 2rem;
+
+  th {
+    min-width: 96px;
+  }
+}
+
+// Social (bottom)
+.social {
+  margin-top: 4rem;
+
+  .contact-icons {
+    margin-top: 1rem;
+    font-size: 3rem;
+
+    a {
+      margin: 1rem;
+    }
+  }
+}
+
+// Projects
+.projects {
+  a {
+    .card-title {
+      font-size: larger;
+    }
+
+    &:hover .card {
+      background-color: var(--global-code-bg-color);
+      border: 1px solid var(--global-theme-color);
+    }
+  }
+
+  .card {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 6px;
+    border: 1px solid var(--global-divider-color);
+    overflow: hidden;
+  }
+
+  h2.category {
+    color: var(--global-text-color);
+    text-align: left;
+  }
+}
+
+// Technology chips used in _projects/*.md
+.project-tech {
+  display: inline-block;
+
+  span {
+    background-color: var(--global-theme-color);
+    color: white;
+    font-size: small;
+    padding: 3px 6px;
+    border-radius: 4px;
   }
 }
